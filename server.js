@@ -65,7 +65,7 @@ app.get("/Equipments", async (req, res) => {
 
 // get particular Equipment
 app.get("/Equipment/:id", async (req, res) => {
-  try {
+  try { 
     let User = await client
       .db("EqupDB")
       .collection("Equipment")
